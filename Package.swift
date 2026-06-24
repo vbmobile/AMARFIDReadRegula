@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "AMADocRFIDReadRegula",
+    name: "AMARFIDReadRegula",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "AMADocRFIDReadRegula",
-            targets: ["AMADocRFIDReadRegulaWrapper"]
+            name: "AMARFIDReadRegula",
+            targets: ["AMARFIDReadRegulaWrapper"]
         )
     ],
     dependencies: [
@@ -18,19 +18,19 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "AMADocRFIDReadRegula",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRFIDReadRegula/AMADocRFIDReadRegula-1.0.0.zip",
-            checksum: "PLACEHOLDER_CHECKSUM"
+            name: "AMARFIDReadRegula",
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMARFIDReadRegula/AMARFIDReadRegula-1.0.0.zip",
+            checksum: "1854b2db4e5bbb2ad80b7dcd618e052aff16b482af5022e28365ae0523db7ae8"
         ),
         .target(
-            name: "AMADocRFIDReadRegulaWrapper",
+            name: "AMARFIDReadRegulaWrapper",
             dependencies: [
-                .target(name: "AMADocRFIDReadRegula"),
+                .target(name: "AMARFIDReadRegula"),
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 .product(name: "MRZRFID", package: "DocumentReaderMRZRFID-Swift-Package"),
             ],
             path: "Sources",
-            sources: ["AMADocRFIDReadRegula.swift"]
+            sources: ["AMARFIDReadRegula.swift"]
         )
     ]
 )
