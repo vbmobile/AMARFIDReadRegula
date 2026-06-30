@@ -21,8 +21,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AMARFIDReadRegula",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMARFIDReadRegula/AMARFIDReadRegula-1.0.0.zip",
-            checksum: "da45b04951e8e26d287869591667e0d9e7a5db1a147e47f6bff71ad9e461405e"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMARFIDReadRegula/AMARFIDReadRegula-1.0.0.3.zip",
+            checksum: "a565d246d07beb2c37ce4f5d7c5a3496624a490a9fed8c3ea907ebd330590e3f"
         ),
         .target(
             name: "AMARFIDReadRegulaWrapper",
