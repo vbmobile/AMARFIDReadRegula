@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "AMARFIDReadRegula",
-            targets: ["AMARFIDReadRegulaWrapper"]
+            targets: ["AMARFIDReadRegula", "AMARFIDReadRegulaWrapper"]
         )
     ],
     dependencies: [
