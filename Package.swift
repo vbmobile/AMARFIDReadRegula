@@ -14,16 +14,16 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/vbmobile/AMADocModel", .upToNextMinor(from: "3.1.0")),
-        .package(path: "../../AMANetworkClient"),
-        .package(url: "https://github.com/vbmobile/AMAUtils", .upToNextMinor(from: "3.0.4")),
+        .package(url: "https://github.com/vbmobile/AMANetworkClient", .upToNextMinor(from: "7.0.4")),
+        .package(url: "https://github.com/vbmobile/AMAUtils", .upToNextMinor(from: "3.0.8")),
         .package(url: "https://github.com/regulaforensics/DocumentReader-Swift-Package", from: "9.5.6487"),
         .package(url: "https://github.com/regulaforensics/DocumentReaderOCRRFID-Swift-Package", from: "9.5.18270"),
     ],
     targets: [
         .binaryTarget(
             name: "AMARFIDReadRegula",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMARFIDReadRegula/AMARFIDReadRegula-1.2.0.zip",
-            checksum: "26994d7563d432852590adb57285531f2ecdfb8ce604454f2a3a159f309d84fc"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMARFIDReadRegula/AMARFIDReadRegula-1.2.1.zip",
+            checksum: "724e9a9129644398bb62a8af5a35af5a90d5f6be4a44e535f1dd439aefb6d46b"
         ),
         .target(
             name: "AMARFIDReadRegulaWrapper",
